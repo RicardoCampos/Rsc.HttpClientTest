@@ -1,0 +1,3 @@
+FROM mono:onbuild
+
+CMD ["mono", "./Rsc.HttpClientTest.exe"]

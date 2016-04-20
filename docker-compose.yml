@@ -1,0 +1,10 @@
+nodeapp:
+  build: ./node
+  dockerfile: node-docker-file
+  ports:
+    - "3000:3000"
+httptest:
+  build: .
+  dockerfile: http-test-docker-file
+  links:
+  - nodeapp
